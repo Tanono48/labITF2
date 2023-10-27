@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function setUsername(){
+            document.getElementById("username-p").innerHTML = document.getElementById("username").value + "'s Gallery";
+        }
+
+        function setprofileimg(){
+            document.getElementById("profileImage").style.backgroundImage = "url(" + document.getElementById("profileimg").value + ")";
+        }
+    </script>
+</head>
+<body>
+    <div class="content"> 
+        <div class="avatar">
+            <div class="profile-img" id="profileImage">
+            </div>
+            <div class="noti">23</div>
+        </div>
+        <div class="username"></div>
+            <a href="https://github.com/" class="on-hover">
+            <p style="font-size: x-large; font-weight: 600;" id="username-p">ITF Gallery</p>
+            </a>
+        <div class="input-group">
+            <div><label style="font-weight: 400;">Set the username</label><input style="margin-left: 10px;" type="text" 
+                id="username"><button  style="margin-left: 10px;" id="setUsername" onclick="setUsername()">set</button></div>
+            <div><label style="font-weight: 400;">Set the profile image URL</label><input style="margin-left: 10px;" type="text" 
+                id="profileimg"><button  style="margin-left: 10px;" id="setImg" onclick="setprofileimg()">set</button></div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item col-span" style="background-image: url(https://staticg.sportskeeda.com/editor/2021/07/73002-16253450984438-800.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://s.yimg.com/ny/api/res/1.2/xfTfOzW9tXHLFCEKygOd0A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY5Mg--/https://media.zenfs.com/en/one37pm_956/e5545c39ae83f8256e0bc881ad415704);"></div>
+            <div class="gallery-item" style="background-image: url(https://marketbusinessnews.com/wp-content/uploads/2019/10/Roblox-thumbnail-image-3898398498598968.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://beebom.com/wp-content/uploads/2022/12/Roblox-Characters-Everything-You-Need-to-Know.jpg?w=750&quality=75);"></div>
+            <div class="gallery-item row-span" style="background-image: url(https://staticg.sportskeeda.com/editor/2021/07/73002-16253450984438-800.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://prod.docsiteassets.roblox.com/assets/accessories/Layered-Clothing-Banner.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://gamingpirate.com/wp-content/uploads/2021/07/roblox-characters1.jpeg);"></div>
+            <div class="gallery-item" style="background-image: url(https://d.newsweek.com/en/full/1976849/roblox-blocky-rhtro-avatars.png?w=1600&h=1200&q=88&f=6688fa0e4272b808bc2a3e147fdc1b6f);"></div>
+            <div class="gallery-item" style="background-image: url(https://i.guim.co.uk/img/media/220cf8592cbd2a3455f25a5d886d3f50e12ac8b9/155_2_1620_972/master/1620.jpg?width=465&dpr=1&s=none);"></div>
+            <div class="gallery-item" style="background-image: url(https://img.asmedia.epimg.net/resizer/vTjZcjTotS8KrE2236-UA0VPAtQ=/1472x828/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/5THVGS2WAJMNDELKHFTWZRD5YI.jpg);"></div>            
+    </div>
+</body>
+</html>
